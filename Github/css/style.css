@@ -1,0 +1,265 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    border: 0;
+    outline: 0;
+    transition: all .25s ease-in-out ;
+
+}
+body{
+    background-color: #fafbfd;
+    overflow-x: hidden;
+
+ }
+ nav{
+     flex: 0.6;
+ }
+ #navbar ul{
+     display: flex;
+
+ }
+ #navbar a{
+     display: block;
+     padding: 1rem;
+     margin: 0 1rem;
+     color: whitesmoke;
+ }
+ .nav-icon{
+     cursor: pointer;
+     padding: 0.5rem;
+     display: none;
+ }
+ #main{ 
+     padding: 0 0 5rem;
+    }
+ header{
+     background-color: crimson;
+     padding: 1rem;
+     color: #f9f9fafa;    
+ }  
+#contain{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+}
+.hero-slider{
+    max-width: 1200px;
+    text-align: center;
+    height: 70vh;
+    margin: auto;
+    overflow: hidden;
+} 
+.hero-image{
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+
+}
+#brand-details{
+    flex: 0.4;
+    display: flex;
+    align-items: center;
+
+} 
+#brand-details img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    align-items: center;
+
+}
+.brand-name{
+    color: #f9fafa;
+    align-items: center;
+}
+    .section-area{
+        background-color: #fff;
+        max-width: 1200px;
+        border-radius: 5px;
+        box-shadow: 3px 5px 5px 5px rgba(65,64,71,0.041);
+        padding: 3rem 2rem;
+        margin: 2rem auto;
+    }
+    .section-label{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2rem;
+
+    }
+    .section-title{
+        color: crimson;
+
+    }
+    .section-subtitle{
+        color: #737373;
+    }
+    .all-courses{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .course-card{
+        max-width: 30rem;
+        background-color: #f8f8f8;
+        padding:  1rem;
+        margin: 1rem;
+        border-radius: 3px;
+        display: flex;
+    }
+    .course-img{
+        width: 6rem;
+        margin: 0 1rem 0 0;
+        position: relative;
+        border-radius: 3px;
+    }
+    .course-members{
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width: 20px;
+        height: 20px;
+        font-size: .65rem;
+        border-radius: 50%;
+        background-color: crimson;
+        color: #fafbfd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .course-details{
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+    .course-description{
+        margin: 0 .7rem 0 .2rem;
+        
+    }
+    .course-title{
+        color: #373737;
+    }
+    .course-intro{
+        color: #737373;
+    }
+    .course-price{
+    }
+    .course-new-price{
+        color: #373737;
+    }
+    .course-old-price{
+        color: crimson;
+        text-decoration: line-through;
+        
+    }
+
+    .all-reviews{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap:0px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    
+    .review-card{
+        max-width: 30rem;
+        background-color: #f8f8f8;
+        padding:  1rem;
+        margin: 1rem;
+        border-radius: 3px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .review-img{
+        width: 40px;
+       
+
+        border-radius: 3px;
+    }
+    .review-img{
+        width: 6rem;
+        margin: 0 1rem 0 0;
+        position: relative;
+        border-radius: 3px;
+    }
+    #review-details img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 1rem;
+        align-items: left;
+        overflow: hidden;
+    }
+    .page-footer{
+        margin: 0;
+        height:50px;
+        background-color: crimson;
+        align-items: center;
+        color: rgba(0, 0, 0);
+        padding-left: 620px;
+    }
+    .foot-note{
+        align-items: center;
+        color: #fff;
+        font-size: 23px;
+        font-weight: bolder;
+    }
+    .parallax-section{
+        padding: 10rem 2rem;
+        background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(../images/Moana.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .parallax-section > *{
+        color: #fff;
+        text-align: center;
+        font-size: 150%;
+    }
+    .page-title{
+        font-size: 250%;
+    }
+    @media screen and (max-width:750px) {
+        header{
+            position: relative;
+        }
+        #brand-details{
+            flex: 1;
+        }
+        header nav{
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            max-height: 0;
+            overflow: hidden;
+            transition: all .25s ease-in-out;
+
+        }
+        header nav ul{
+            flex-direction: column;
+            background: crimson;
+    
+        }
+        header nav.show{
+            max-height: 100%;
+            overflow: visible;
+            transition: all .25s ease-in-out;
+        }
+        .nav-icon{
+            display: block;
+
+        }
+
+        
+    }
+
+
